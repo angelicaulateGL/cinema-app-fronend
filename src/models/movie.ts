@@ -1,5 +1,15 @@
+export interface MovieResponse {
+  _id: string
+  title: string
+  description: string
+  genres: string
+  image: string
+  rating: number
+}
+
 export interface Movie {
-  movieName: string
+  id: string
+  title: string
   description: string
   genres: Genre[]
   image: string
@@ -7,5 +17,6 @@ export interface Movie {
 }
 
 export interface Genre {
-  genre: string
+  id: string
+  name: string
 }
